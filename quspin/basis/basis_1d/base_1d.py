@@ -221,7 +221,7 @@ class basis_1d(lattice_basis):
 			basis=_np.empty((Ns,),dtype=self._basis_type)
 			self._op = ops_module.t_p_op
 
-			if self._basis_type == _np.object:
+			if self._basis_type == object:
 				N=_np.empty(basis.shape,dtype=_np.int32) 
 				M=_np.empty(basis.shape,dtype=_np.uint32)
 			else:			
